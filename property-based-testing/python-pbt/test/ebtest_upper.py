@@ -11,5 +11,6 @@ class TestUpper(unittest.TestCase):
     def test_upper_avoids_non_lower(self):
         self.assertEqual('ABC123', 'abc123'.upper())
 
+
 if __name__ == '__main__':
     unittest.main()
