@@ -2,3 +2,4 @@
 .hypothesis/
 .nrepl-port
 .cache/
+.cpcache/
