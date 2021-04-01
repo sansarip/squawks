@@ -5,7 +5,7 @@
 
 (deftest test-uppercase-maintains-length
   (testing "The length of the original string is the same as length of the uppercase string"
-    (is (count "caca") (count (string/upper-case "caca")))))
+    (is (= (count "caca") (count (string/upper-case "caca"))))))
 
 (deftest test-uppercase-less-than-lowercase
   (testing "The value of the uppercase string is less than the value of the lowercase string"
