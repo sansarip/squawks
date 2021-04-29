@@ -14,7 +14,7 @@
     "execa": "2.0.5",
     "globby": "9.1.0",
     "netlify-plugin-cypress": "2.0.0",
-    "semantic-release": "15.13.32",
+    "semantic-release": "17.2.3",
     "shadow-cljs": "^2.12.5",
     "start-server-and-test": "1.10.6",
     "stop-build": "1.1.0",
