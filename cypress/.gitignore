@@ -20,3 +20,7 @@ pom.xml.asc
 .hg/
 
 .preprocessor-cljs/
+
+/cypress/screenshots
+/cypress/videos
+
