@@ -1,19 +1,13 @@
-var expect = require("chai").expect;
+describe("test uppercase", () => {
+  it("string is uppercased", () => {
+    expect("BABA").toEqual("baba".toUpperCase());
+  });
 
-describe("maintains length", () => {
-    it("the length of the original string is the same as length of the uppercase string", () => {
-        expect("caca".length).to.equal("caca".toUpperCase().length);
-    })
-})
+  it("empty string is the same", () => {
+    expect("").toEqual("".toUpperCase());
+  })
 
-describe("uppercase less than lowercase", () => {
-    it("the value of the uppercase string is less than the value of the lowercase string", () => {
-        expect("caca".toUpperCase() > "caca");
-    })
-})
-
-describe("uppercase avoids non lowercase", () => {
-    it("only lowercase characters are affected", () => {
-        expect("ABC123").to.equal("AbC123".toUpperCase());
-    })
-})
+  it("non-alphanumerical is unaffected", () => {
+    expect("{}[]!123.").toEqual("{}[]!123.".toUpperCase());
+  })
+});

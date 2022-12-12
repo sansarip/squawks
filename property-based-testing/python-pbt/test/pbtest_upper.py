@@ -28,7 +28,7 @@ class TestUpper(unittest.TestCase):
     @settings(max_examples=max_examples, print_blob=True)
     def test_upper_avoids_non_lower(self, t):
         lower, other, shuffled = t
-	# Capitalizes lowercase characters, character by character
+        # Capitalizes lowercase characters, character by character
         expected = ''.join(list(map(lambda c: c.upper() if c in lower else c, shuffled)))
         self.assertEqual(expected, shuffled.upper())
 

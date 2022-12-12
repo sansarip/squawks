@@ -2,21 +2,16 @@
   "name": "js-pbt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "ts-mocha"
+    "test": "jest"
   },
   "author": "Sepehr Ansaripour",
   "license": "ISC",
   "devDependencies": {
-    "@types/chai": "^4.2.16",
-    "@types/expect": "^24.3.0",
-    "@types/mocha": "^8.2.2",
+    "@types/jest": "^29.2.4",
     "@types/node": "^14.14.37",
     "chai": "^4.3.4",
-    "jsverify": "^0.8.4",
-    "mocha": "^8.3.2",
-    "ts-mocha": "^8.0.0"
+    "fast-check": "^3.4.0"
   },
   "dependencies": {
     "ts-node": "^7.0.1",

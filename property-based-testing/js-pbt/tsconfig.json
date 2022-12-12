@@ -1,10 +1,15 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "sourceMap": true
-      },
-    "include": ["test/**/*"]
+  "compilerOptions": {
+    "rootDir": ".",
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "types": ["node", "jest"]
+  },
+  "include": ["test/**/*"],
+  "exclude": ["node_modules", "tmp"]
 }
